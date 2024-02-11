@@ -7,7 +7,7 @@ const source = fs.readFileSync(lotteryPath, "utf8");
 const input = {
     language: 'Solidity',
     sources: {
-        'Inbox.sol': {
+        'Lottery.sol': {
             content: source
         }
     },
