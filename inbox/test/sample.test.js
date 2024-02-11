@@ -11,13 +11,13 @@ class Car {
     }
 }
 
-let car;
-
-beforeEach(() => {
-    car = new Car();
-});
-
 describe('Car', () => {
+    let car;
+
+    beforeEach(() => {
+        car = new Car();
+    });
+
     it('can park', () => {
         assert.equal(car.park(), 'stopped');
     });
