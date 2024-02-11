@@ -15,7 +15,7 @@ describe('Inbox', () => {
         accounts = await web3.eth.getAccounts();
     
         // Use one of those accounts to deploy the contract
-        inbox = await new web3.eth.Contract(JSON.parse(abi))
+        inbox = await new web3.eth.Contract(abi)
             .deploy({ data: evm.bytecode.object, arguments: [ INITIAL_MESSAGE ] })
             .send({ from: accounts[0], gas: '1000000' });
     });
