@@ -26,4 +26,3 @@ const deploy = async () => {
 };
 
 deploy();
-// Contract address: 0x488d6612c09162F0e1d050eD8545609439db18e9
